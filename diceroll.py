@@ -11,17 +11,17 @@ roll = np.round(sides).tolist()
 
 results=[]
 
-#Ask user to select the number of times he/she wants the dice roll to ocurr
+#Ask user to select the number of times he/she wants the dice roll to ocurr.
 val = int(input("Enter number of times you want to roll dice: "))
 for i in range(val):
     outcome = random.choice(roll)
     results.append(outcome)
 
-#Use collections counter to take frequency of our outcomes and store to a dictionary
+#Use collections counter to take frequency of our outcomes and store to a dictionary.
 tally= Counter(results)
 sort_dict= dict(sorted(tally.items()))
 
-#Print our outcomes in a table
+#Print our outcomes in a table. (Record the outcomes in a neat way)
 print('FACE','   FREQUENCY',' PERCENTAGE(S)')
 print('')
 print('#################################')
