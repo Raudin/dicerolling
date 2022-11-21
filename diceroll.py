@@ -1,5 +1,6 @@
 import random
 from collections import Counter
+# Counter is a collection where elements are stored as dictionary keys and their counts are stored as dictionary values.
 import numpy as np
 
 #Use numpy to generate the sides of the dice
